@@ -10,7 +10,7 @@
             "rate4" : "fa fa-star-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-1.jpg",
+        "image_url": "./product-1.jpg",
         "category": "Tshirt"
     },
     {
@@ -25,7 +25,7 @@
             "rate5" : "fa fa-star-half-o"
         },
         "category": "shoes",
-        "image_url": "images/product-2.jpg"
+        "image_url": "./product-2.jpg"
     },
     {
         "id" : 3,
@@ -38,7 +38,7 @@
             "rate4" : "fa fa-star",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-3.jpg",
+        "image_url": "./product-3.jpg",
         "category": "trouser"
     },
     {
@@ -52,7 +52,7 @@
             "rate4" : "fa fa-star",
             "rate5" : "fa fa-star-half-o"
         },
-        "image_url": "images/product-4.jpg",
+        "image_url": "./product-4.jpg",
         "category": "tshirt"
     },
     {
@@ -66,7 +66,7 @@
             "rate4" : "fa fa-star-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-5.jpg",
+        "image_url": "./product-5.jpg",
         "category": "shoes"
     },
     {
@@ -80,7 +80,7 @@
             "rate4" : "fa fa-star",
             "rate5" : "fa fa-star-half-o"
         },
-        "image_url": "images/product-6.jpg",
+        "image_url": "./product-6.jpg",
         "category": "tshirt"
     },
     {
@@ -94,7 +94,7 @@
             "rate4" : "fa fa-star-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-7.jpg",
+        "image_url": "./product-7.jpg",
         "category": "socks"
     },
     {
@@ -108,7 +108,7 @@
             "rate4" : "fa fa-star-half-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-8.jpg",
+        "image_url": "./product-8.jpg",
         "category": "watch"
     },
     {
@@ -122,7 +122,7 @@
             "rate4" : "fa fa-star",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-9.jpg",
+        "image_url": "./product-9.jpg",
         "category": "watch"
     },
     {
@@ -136,7 +136,7 @@
             "rate4" : "fa fa-star-half-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-10.jpg",
+        "image_url": "./product-10.jpg",
         "category": "shoes"
     },
     {
@@ -150,7 +150,7 @@
             "rate4" : "fa fa-star-o",
             "rate5" : "fa fa-star-o"
         },
-        "image_url": "images/product-11.jpg",
+        "image_url": "./product-11.jpg",
         "category": "shoes"
     },
     {
@@ -164,7 +164,7 @@
             "rate4" : "fa fa-star",
             "rate5" : "fa fa-star-half-o"
         },
-        "image_url": "images/product-12.jpg",
+        "image_url": "./product-12.jpg",
         "category": "trouser"
     }
 ]
