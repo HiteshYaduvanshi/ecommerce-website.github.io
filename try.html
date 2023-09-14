@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+</head>
+<body>
+  <div id="product-list">
+    <h3>hello</h3>
+    <button onclick="ggh()">click me</button>
+  </div>
+  
+
+  <script>
+
+    function ggh(){
+    }
+    // Sample JSON with multiple products
+    var productData = [
+      {
+        "id": 1,
+        "name": "Product 1",
+        "description": "Description for Product 1",
+        "price": 19.99,
+        "currency": "USD",
+        "image_url": "https://example.com/product1-image.jpg",
+        "availability": true
+      },
+      {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Description for Product 2",
+        "price": 29.99,
+        "currency": "USD",
+        "image_url": "https://example.com/product2-image.jpg",
+        "availability": false
+      }
+      // Add more products here
+    ];
+
+    // Function to populate the product list
+    function populateProductList(data) {
+      var productContainer = document.getElementById("product-list");
+
+      data.forEach(function (product) {
+        var productHTML = `
+          <div class="product" onclick="openProductDetails(${product.id})">
+            <h1>${product.name}</h1>
+            <img src="${product.image_url}" alt="${product.name}" width="200">
+          </div>
+        `;
+
+        productContainer.innerHTML += productHTML;
+      });
+    }
+
+    // Function to open the product details page
+    function openProductDetails(productId) {
+      var productDetailsContainer = document.getElementById("product-details");
+      var productDetailsContent = document.getElementById("product-details-content");
+
+      // Find the selected product in the
+      var selectedProduct = productData.find(product => product.id === productId);
+
+      if (selectedProduct) {
+        productDetailsContent.innerHTML = `
+          <h1>${selectedProduct.name}</h1>
+          <p>${selectedProduct.description}</p>
+          <p>Price: $${selectedProduct.price} ${selectedProduct.currency}</p>
+          <img src="${selectedProduct.image_url}" alt="${selectedProduct.name}" width="200">
+          <p>Availability: ${selectedProduct.availability ? 'In Stock' : 'Out of Stock'}</p>
+        `;
+        
+        // Show the product details container
+        productDetailsContainer.style.display = "block";
+      }
+    }
+
+    // Function to close the product details page
+    function closeProductDetails() {
+      var productDetailsContainer = document.getElementById("product-details");
+      productDetailsContainer.style.display = "none";
+    }
+
+    // Call the function to populate the product list
+    populateProductList(productData);
+  </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo_image" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menueitem">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" alt="cart image" width="30px" height="30px">
+            </a>
+            <img src="images/menu.png" alt="" class="menue-icon" onclick="menuetoggle()">
+        </div>
+    </div>
+    
+    <div class="small-container">
+        <div class="form_section">
+            <form action="">
+                <input type="text" name="" id="search-item" placeholder="Search Product" onkeyup="search()">
+            </form>
+        </div>
+        <!-- <div class="search_category">
+            <div class="btn1" data-filter="all">
+                All
+            </div>
+            <div class="btn1" data-filter="tshirt">
+                Tshirt
+            </div>
+            <div class="btn1" data-filter="shoes">
+                Shoes
+            </div>
+            <div class="btn1" data-filter="socks">
+                Socks
+            </div>
+            <div class="btn1" data-filter="watch">
+                Watch
+            </div>
+            <div class="btn1" data-filter="trouser">
+                Trouser
+            </div>
+        </div> -->
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <form action="">
+                <select name="sort" id="sort">
+                    <option disabled selected hidden>sort</option>
+                    <option value="ascending">Price(Lowest)</option>
+                    <option value="descending">Price(Higest)</option>
+                    <option value="ascendinga2z">A to Z</option>
+                </select>
+            </form>
+        </div>
+        <!-- <h2 class="tittle">featured products</h2> -->
+        <div id="producid"></div>
+        <div class="row product_row" id="productList">
+
+            <!-- <div class="col-4 product tshirt" data-price="50" data-name="Red Tshirt">
+                <a href="productdetail.html">
+                    <img src="images/product-1.jpg" alt="">
+                    <h4> Red Tshirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product shoes" data-price="60" data-name="Black Shoes">
+                <a href="productdetail.html">
+                    <img src="images/product-2.jpg" alt="">
+                    <h4>Black Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$60.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product trouser" data-price="40" data-name="Gray Trouser">
+                <a href="productdetail.html">
+                    <img src="images/product-3.jpg" alt="">
+                    <h4>Gray Trouser</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$40.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product tshirt" data-price="55" data-name="Blue Tshirt">
+                <a href="productdetail.html">
+                    <img src="images/product-4.jpg" alt="">
+                    <h4>Blue Tshirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product shoes" data-price="65" data-name="Gray Shoes">
+                <a href="productdetail.html">
+                    <img src="images/product-5.jpg" alt="">
+                    <h4>Gray Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$65.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product tshirt" data-price="45" data-name="Black Tshirt">
+                <a href="productdetail.html">
+                    <img src="images/product-6.jpg" alt="">
+                    <h4>Black Tshirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$45.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product socks" data-price="20" data-name="Socks">
+                <a href="productdetail.html">
+                    <img src="images/product-7.jpg" alt="">
+                    <h4>Socks</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$20.00</p>
+                </a>
+            </div>
+            
+            <div class="col-4 product watch" data-price="85" data-name="Fossil Watch">
+                <a href="productdetail.html">
+                    <img src="images/product-8.jpg" alt="">
+                    <h4>Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$85.00</p>
+                </a>
+            </div>
+            
+            <div class="col-4 product watch" data-price="90" data-name="Roadster Watch">
+                <a href="productdetail.html">
+                    <img src="images/product-9.jpg" alt="">
+                    <h4>Roadster Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$90.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product shoes" data-price="70" data-name="Red Black Shoes">
+                <a href="productdetail.html">
+                    <img src="images/product-10.jpg" alt="">
+                    <h4>Red Black Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$70.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product shoes" data-price="69" data-name="Gray Shoes">
+                <a href="productdetail.html">
+                    <img src="images/product-11.jpg" alt="">
+                    <h4>Gray Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$69.00</p>
+                </a>
+            </div>
+
+            <div class="col-4 product trouser" data-price="42" data-name="Black Trouser">
+                <a href="productdetail.html">
+                    <img src="images/product-12.jpg" alt="">
+                    <h4>Black Trouser</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$42.00</p>
+                </a>
+            </div> -->
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Hitesh yaduvanshi</p>
+        </div>
+    </div>
+
+    <script>
+        var menueitem = document.getElementById("menueitem");
+        menueitem.style.maxHeight = "0px";
+        function menuetoggle(){
+            if(menueitem.style.maxHeight == "0px"){
+                menueitem.style.maxHeight = "200px";
+            }
+            else{
+                menueitem.style.maxHeight = "0px";
+            }
+        }
+
+        const search  = () =>{
+            const searchbox = document.getElementById("search-item").value.toUpperCase();
+            // console.log(searchbox);
+            const storeitems = document.getElementById("productList");
+            // console.log(storeitems);
+            const product = document.querySelectorAll(".product");
+            // console.log(product);
+            const pname = storeitems.getElementsByTagName("h4");
+            console.log(pname.length);
+
+            for(let i=0; i<pname.length; i++){
+                let match = product[i].getElementsByTagName("h4")[0];
+                // let tryy = product[1].getElementsByTagName("h4")[0];
+                // console.log(tryy);
+                if(match){
+                    let textvalue = match.textContent || match.innerHTML;
+                    // console.log(textvalue)
+
+                    if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+                        product[i].style.display = "";
+                    }
+                    else{
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+            // alert(searchbox)
+        }
+
+        
+        (function () {
+            const buttons = document.querySelectorAll(".btn1");
+            // console.log(buttons.length)
+            const storeitems1 = document.querySelectorAll('.product');
+            // console.log(storeitems1)
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', (e) =>{
+                    e.preventDefault();
+
+                    const filter = e.target.dataset.filter;
+                    storeitems1.forEach((item) =>{
+                        if (filter === 'all'){
+                            item.style.display = 'block'
+                        }else{
+                            if(item.classList.contains(filter)){
+                                item.style.display = 'block'
+                            }else{
+                                item.style.display = 'none'
+                            }
+                        }
+                    })
+                })
+            });
+            
+
+        })();
+
+        // Function to update the displayed products based on the selected sort order
+        function updateProductList(sortOrder) {
+            const productList = document.getElementById("productList");
+            const products = Array.from(productList.querySelectorAll('.product'));
+
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.getAttribute("data-price"));
+                const priceB = parseFloat(b.getAttribute("data-price"));
+                const nameA = a.getAttribute("data-name").toLowerCase();
+                const nameB = b.getAttribute("data-name").toLowerCase();
+
+                if (sortOrder === "ascending") {
+                    return priceA - priceB;
+                } else if (sortOrder === "descending") {
+                    return priceB - priceA;
+                } else if (sortOrder === "ascendinga2z") {
+                    return nameA.localeCompare(nameB);
+                } else {
+                    // Default order based on their appearance in HTML
+                    return 0;
+                }
+            });
+
+            productList.innerHTML = "";
+            products.forEach(product => {
+                productList.appendChild(product);
+            });
+        }
+
+        // Event listener for the price sorting select
+        const priceSort = document.getElementById("sort");
+        priceSort.addEventListener("change", () => {
+            const selectedSortOrder = priceSort.value;
+            updateProductList(selectedSortOrder);
+        });
+
+         // Event listener for the alphabetical sorting select
+         const alphabeticalSort = document.getElementById("alphabeticalSort");
+            alphabeticalSort.addEventListener("change", () => {
+            const selectedSortOrder = alphabeticalSort.value;
+            updateProductList(selectedSortOrder);
+        });
+
+        // Initialize the product list with default values (default order)
+        updateProductList("default");
+    </script>
+    <!-- <script src="java.js"></script> -->
+    <script src="poroduct.js"></script>
+</body>
+</html>

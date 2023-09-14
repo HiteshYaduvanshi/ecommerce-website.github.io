@@ -1,0 +1,170 @@
+[
+    {
+        "id" : 1,
+        "name": "Red Tshirt",
+        "price": 50.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-1.jpg",
+        "category": "Tshirt"
+    },
+    {
+        "id" : 2,
+        "name": "Black Shoes",
+        "price": 60.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-half-o"
+        },
+        "category": "shoes",
+        "image_url": "images/product-2.jpg"
+    },
+    {
+        "id" : 3,
+        "name": "Gray Trouser",
+        "price": 40.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-3.jpg",
+        "category": "trouser"
+    },
+    {
+        "id" : 4,
+        "name": "Blue Tshirt",
+        "price": 55.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-half-o"
+        },
+        "image_url": "images/product-4.jpg",
+        "category": "tshirt"
+    },
+    {
+        "id" : 5,
+        "name": "gray Shoes",
+        "price": 65.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-5.jpg",
+        "category": "shoes"
+    },
+    {
+        "id" : 6,
+        "name": "Black Tshirt",
+        "price": 45.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-half-o"
+        },
+        "image_url": "images/product-6.jpg",
+        "category": "tshirt"
+    },
+    {
+        "id" : 7,
+        "name": "Socks",
+        "price": 20.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-7.jpg",
+        "category": "socks"
+    },
+    {
+        "id" : 8,
+        "name": "Fossils watch",
+        "price": 85.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-half-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-8.jpg",
+        "category": "watch"
+    },
+    {
+        "id" : 9,
+        "name": "Roadster Watch",
+        "price": 90.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-9.jpg",
+        "category": "watch"
+    },
+    {
+        "id" : 10,
+        "name": "Red Black Shoes",
+        "price": 70.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-half-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-10.jpg",
+        "category": "shoes"
+    },
+    {
+        "id" : 11,
+        "name": "Gray Shoes",
+        "price": 69.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star-o",
+            "rate5" : "fa fa-star-o"
+        },
+        "image_url": "images/product-11.jpg",
+        "category": "shoes"
+    },
+    {
+        "id" : 12,
+        "name": "Black Trouser",
+        "price": 42.00,
+        "rating":{
+            "rate1" : "fa fa-star",
+            "rate2" : "fa fa-star",
+            "rate3" : "fa fa-star",
+            "rate4" : "fa fa-star",
+            "rate5" : "fa fa-star-half-o"
+        },
+        "image_url": "images/product-12.jpg",
+        "category": "trouser"
+    }
+]
